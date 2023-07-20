@@ -9,7 +9,7 @@
 -> [Vídeo ensinando a implementação em React.js](https://youtu.be/A5KFY5Jh1Uc): Mesmo usando uma tecnologia diferente do Vue.js, o tutorial ensina como conseguir todos os tokens necessários para as integrações usando o primeiro link informado nesse documento
 
 ## Informações importantes
-- Os BI's deveme estar dentro de um workspace para a API funcionar em plena capacidade, pois isso fornece o `groupId` usado como parametro em diversas chamadas
+- Os BI's devem estar dentro de um WORKSPACE para a API funcionar em plena capacidade, pois isso fornece o `groupId` usado como parametro em diversas chamadas
 
 - Para gerar o token de integração master, deve ser em: [Reports GenerateTokenInGroup](https://learn.microsoft.com/en-us/rest/api/power-bi/embed-token/reports-generate-token-in-group), onde deverá ser informado:
   - Como Parametros:
