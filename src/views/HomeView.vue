@@ -5,9 +5,9 @@
       id: reportId,
       embedUrl: embedUrl,
       accessToken: token,
-      tokenType: 1,
-      permissions: 7, 
-      viewMode: 1,
+      tokenType: models.TokenType.Embed,
+      permissions: models.Permissions.All, 
+      viewMode: models.ViewMode.View,
       settings: {
         panes: {
           filters: {
@@ -15,7 +15,7 @@
             visible: false
           }
         },
-        background: 1,
+        background: models.BackgroundType.Transparent,
       }
     }"
     class="powerbi"
@@ -27,6 +27,10 @@
     ])">
     </PowerBIReportEmbed>
 </template>
+
+<script setup lang="ts">
+  import {models} from 'powerbi-client'
+</script>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
